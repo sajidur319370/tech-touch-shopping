@@ -19,9 +19,11 @@ const Shop = () => {
     setCart(newCart);
   };
   const chooseOne = () => {
-    const x = cart[Math.floor(Math.random() * cart.length)];
-    const item = [x];
-    setChoosen(item);
+    if (cart.length !== 0) {
+      const x = cart[Math.floor(Math.random() * cart.length)];
+      const item = [x];
+      setChoosen(item);
+    }
   };
   const chooseAgain = () => {
     const empty = [];

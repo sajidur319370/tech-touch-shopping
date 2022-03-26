@@ -47,3 +47,6 @@
   cursor: pointer;
   background-color: rgb(250, 235, 199);
 }
+.cart-button:hover{
+  opacity: 0.8;
+}

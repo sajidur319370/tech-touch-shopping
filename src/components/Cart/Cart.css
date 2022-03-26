@@ -10,12 +10,16 @@
   height: 50px;
   border-radius: 50%;
 }
-.delete-button{
-    margin-left: 20px;
-    width: 50px;
-    height: 30px;
-    border-radius: 50%;
-    border: none;
-    background-color:rgb(112, 112, 255) ;
-    color: rgb(250, 235, 199);
+.delete-button {
+  margin-left: 20px;
+  padding:8px 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(156, 40, 40);
+  color: rgb(250, 235, 199);
+  cursor: pointer;
+}
+.delete-button:hover{
+  opacity: 0.9;
+  color:white;
 }

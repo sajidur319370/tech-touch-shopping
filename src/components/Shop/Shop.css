@@ -16,6 +16,11 @@
   background-color:rgb(112, 112, 255) ;
   color:  rgb(250, 235, 199);
   margin: 10px;
+  cursor: pointer;
+}
+.chose-one:hover{
+  opacity: 0.9;
+
 }
 @media (max-width: 575.98px) {
   .product-container {
