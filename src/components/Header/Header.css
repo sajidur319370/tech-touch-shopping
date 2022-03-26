@@ -10,11 +10,13 @@
     list-style: none;
     display: inline-block;
     margin-left: 16px;
+    font-weight: 500;
+    color: black;
 }
 .menu li a{
     text-decoration: none;
     color: black;
-    font-weight: 500;
+   
 }
 .menu li a:hover{
     

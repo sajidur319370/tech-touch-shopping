@@ -17,10 +17,10 @@ const Header = () => {
             <a href="/Shop">Shop</a>
           </li>
           <li>
-            <a href="/Inventory">Inventory</a>
+            <a href="/inventory">Inventory</a>
           </li>
           <li>
-            <a href="Cart">Cart</a>
+            <a href="/cart">cart</a>
           </li>
         </ul>
       </nav>
