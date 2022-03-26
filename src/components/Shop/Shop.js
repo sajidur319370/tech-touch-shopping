@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
+import Choose from "../Choose/Choose";
 import Product from "../Product/Product";
 import "./Shop.css";
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
+  const [choosen, setChoosen] = useState([]);
   useEffect(() => {
     fetch("products.json")
       .then((res) => res.json())
@@ -13,12 +15,19 @@ const Shop = () => {
   }, []);
 
   const addToCart = (product) => {
-    console.log(product);
     const newCart = [...cart, product];
     setCart(newCart);
-    console.log(newCart);
   };
-
+  const chooseOne = () => {
+    const x = cart[Math.floor(Math.random() * cart.length)];
+    const item = [x];
+    setChoosen(item);
+  };
+  const chooseAgain = () => {
+    const empty = [];
+    setCart(empty);
+    setChoosen(empty);
+  };
   return (
     <div className="shop-container">
       <div className="cart-container">
@@ -26,6 +35,25 @@ const Shop = () => {
         {cart.map((product) => (
           <Cart key={product.id} product={product}></Cart>
         ))}
+        {choosen.map((product) => (
+          <Choose key={product.id} product={product}></Choose>
+        ))}
+        <button
+          onClick={() => {
+            chooseOne();
+          }}
+          className="chose-one"
+        >
+          Choose One For Me
+        </button>
+        <button
+          onClick={() => {
+            chooseAgain();
+          }}
+          className="chose-one"
+        >
+          Choose Again
+        </button>
       </div>
       <div className="product-container">
         {products.map((product) => (

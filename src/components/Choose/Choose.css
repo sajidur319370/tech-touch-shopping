@@ -1,0 +1,11 @@
+.choose{
+    width: 200px;
+    margin: 0 auto;
+}
+.choose img{
+    height: 100px;
+    width: 100px;
+}
+.title{
+    color:rgb(53, 53, 99)
+}
