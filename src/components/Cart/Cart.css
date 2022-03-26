@@ -1,4 +1,21 @@
-.cart{
-    background-color: rgb(177, 216, 216);
-
+.cart {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.cart-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.delete-button{
+    margin-left: 20px;
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color:rgb(112, 112, 255) ;
+    color: rgb(250, 235, 199);
 }
