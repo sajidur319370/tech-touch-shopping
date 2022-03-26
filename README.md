@@ -1,6 +1,6 @@
 # Tech Touch
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Visite Live site (https://glistening-dolphin-8d2769.netlify.app).
 
 ## Available Scripts
 
