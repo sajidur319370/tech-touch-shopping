@@ -5,7 +5,13 @@
     grid-gap: 20px;
 
 }
-.cart-container{
-    background-color: darkgreen;
+@media (max-width: 575.98px) { 
+    .product-container{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
-
+@media (min-width:576px) and (max-width: 900px) { 
+    .product-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

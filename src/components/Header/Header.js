@@ -6,10 +6,12 @@ const Header = () => {
   return (
     <div>
       <nav className="navbar">
-        <a href="/home">
-          <img src={logo} alt="" className="logo" />
-        </a>
-        <ul className="menu">
+        <div className="logo">
+          <a href="/home">
+            <img src={logo} alt="" className="logo" />
+          </a>
+        </div>
+        <div className="menu">
           <li>
             <a href="/home">Home</a>
           </li>
@@ -22,7 +24,7 @@ const Header = () => {
           <li>
             <a href="/cart">cart</a>
           </li>
-        </ul>
+        </div>
       </nav>
     </div>
   );

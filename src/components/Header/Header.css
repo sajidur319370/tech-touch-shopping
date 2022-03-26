@@ -2,14 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin:0 100px;
-    height: 150px;
-
+    margin: 0 100px;
+   
 }
 .menu li{
     list-style: none;
     display: inline-block;
-    margin-left: 16px;
+    margin:0 10px;
     font-weight: 500;
     color: black;
 }
@@ -22,4 +21,37 @@
     
     color: rgb(123, 123, 233);
     
+}
+@media (max-width: 575.98px) { 
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    
+    }
+    .menu{
+        
+        margin: 0 auto;
+        
+    }
+    .menu li{
+       display: block;
+        margin-left: 0px;
+       
+    }
+}
+
+@media (min-width:576px) and (max-width: 900px) { 
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .menu li{
+        
+        margin-left: 0;
+       
+    }
 }
