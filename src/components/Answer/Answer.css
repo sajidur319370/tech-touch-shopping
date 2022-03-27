@@ -1,0 +1,12 @@
+.answer-container{
+    margin: 100px auto;
+    padding: 20px;
+    text-align: left;
+}
+.question{
+    color:rgb(106, 106, 231)
+}
+.answer{
+    font-size: 18px;
+    font-weight: 500;
+}
